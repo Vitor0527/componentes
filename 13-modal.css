@@ -1,0 +1,48 @@
+/* 13. Modal (popover, dialog e backdrop) */
+/* Usando Popover, dialog e backdrop */
+
+.box {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  max-width: 500px;
+}
+
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+dialog[popover] {
+  margin: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+dialog[popover]::backdrop {
+  background-color: rgba(40, 0, 80, 0.25);
+  backdrop-filter: blur(3px);
+}
+
+button[popovertarget] {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button[popovertarget]:hover {
+  background-color: #0056b3;
+}
+
+button[popovertargetaction="hide"] {
+  background-color: #6c757d;
+}
+
+button[popovertargetaction="hide"]:hover {
+  background-color: #545b62;
+}
+

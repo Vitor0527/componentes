@@ -1,0 +1,58 @@
+/* 9. Card (container query) */
+/* Usando container queries */
+
+.card-container {
+  container-type: inline-size;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  transition: box-shadow 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+  margin-bottom: 1rem;
+}
+
+.card-footer {
+  padding-top: 0.75rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+/* Container query para layout responsivo */
+@container (min-width: 300px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .card-header {
+    grid-column: 1 / -1;
+  }
+  
+  .card-footer {
+    grid-column: 1 / -1;
+  }
+}
+

@@ -1,0 +1,61 @@
+/* 15. Navs & tabs */
+/* Usando details, summary com attr(), grid, subgrid, :is(), ::details-content */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: auto 1fr;
+}
+
+details {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 2;
+  border-bottom: 1px solid lightgray;
+}
+
+summary {
+  --tab-order: attr(data-tab-order type(<integer>));
+  grid-column: var(--tab-order) / span 1;
+  grid-row: 1;
+  display: grid;
+  padding: 1rem;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+  z-index: 1;
+  list-style: none;
+  background-color: #f8f9fa;
+  transition: background-color 0.2s;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:hover {
+  background-color: #e9ecef;
+}
+
+details[open] :is(summary) {
+  font-weight: bold;
+  pointer-events: none;
+  border: 1px solid lightgray;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: none;
+  background-color: #fff;
+}
+
+details::details-content {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+details:not([open])::details-content {
+  display: none;
+}
+

@@ -1,0 +1,56 @@
+/* 10. DropDown (popover e anchor positioning) */
+/* Usando Popover e anchor positioning */
+
+ul[popover] {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  min-width: 150px;
+}
+
+#anchor {
+  anchor-name: --toggle;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+#anchor:hover {
+  background-color: #0056b3;
+}
+
+#target {
+  position: absolute;
+  position-anchor: --toggle;
+  position-area: bottom;
+  position-try-fallbacks: top;
+  width: anchor-size(width);
+}
+
+#target li {
+  border-bottom: 1px solid #eee;
+}
+
+#target li:last-child {
+  border-bottom: none;
+}
+
+#target li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+#target li a:hover {
+  background-color: #f8f9fa;
+}
+

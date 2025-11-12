@@ -1,0 +1,51 @@
+/* 20. Tooltip (popover e anchor positioning) */
+/* Usando popover e anchor positioning */
+
+.forma {
+  padding-left: 0.75rem;
+  clip-path: polygon(
+    100% 0%,
+    100% 100%,
+    5px 100%,
+    5px calc(50% + 5px),
+    0% 50%,
+    5px calc(50% - 5px),
+    5px 0%
+  );
+}
+
+#info-opener {
+  anchor-name: --info-opener;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+#info-opener:hover {
+  background-color: #0056b3;
+}
+
+.info-tooltip[popover] {
+  background: #007bff;
+  padding: 5px 10px;
+  border: none;
+  color: #fff;
+  margin: 0;
+  max-width: 200px;
+}
+
+#info {
+  margin: 0;
+  position: absolute;
+  position-anchor: --info-opener;
+  position-area: right;
+  position-try-fallbacks: left;
+}
+
+.info-icon {
+  cursor: help;
+}
+

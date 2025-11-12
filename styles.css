@@ -1,0 +1,63 @@
+/* Caderno de Estilos - InfoAlunos */
+/* Arquivo principal que importa todos os componentes */
+
+/* 1. Alternar entre tema claro/escuro */
+@import url('01-theme-toggle.css');
+
+/* 2. Cores */
+@import url('02-colors.css');
+
+/* 3. Tipografia */
+@import url('03-typography.css');
+
+/* 4. Accordion */
+@import url('04-accordion.css');
+
+/* 5. Alerts */
+@import url('05-alerts.css');
+
+/* 6. Badge */
+@import url('06-badge.css');
+
+/* 7. Breadcrumb */
+@import url('07-breadcrumb.css');
+
+/* 8. Buttons */
+@import url('08-buttons.css');
+
+/* 9. Card */
+@import url('09-card.css');
+
+/* 10. DropDown */
+@import url('10-dropdown.css');
+
+/* 11. Formulários */
+@import url('11-forms.css');
+
+/* 12. Listas */
+@import url('12-lists.css');
+
+/* 13. Modal */
+@import url('13-modal.css');
+
+/* 14. Navbar */
+@import url('14-navbar.css');
+
+/* 15. Navs & tabs */
+@import url('15-navs-tabs.css');
+
+/* 16. Pagination */
+@import url('16-pagination.css');
+
+/* 17. Progress */
+@import url('17-progress.css');
+
+/* 18. Spinners */
+@import url('18-spinners.css');
+
+/* 19. Tabelas */
+@import url('19-tables.css');
+
+/* 20. Tooltip */
+@import url('20-tooltip.css');
+

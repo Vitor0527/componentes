@@ -1,0 +1,39 @@
+/* 6. Badge */
+/* Usando Anchor positioning */
+
+.anchor-button {
+  anchor-name: --inbox-button;
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: var(--cor-primaria, #007bff);
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.anchor-badge {
+  position: absolute;
+  top: anchor(--inbox-button top);
+  left: anchor(--inbox-button right);
+  translate: -50% -50%;
+  background-color: #dc3545;
+  color: white;
+  padding: 0.25em 0.5em;
+  border-radius: 50rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border-width: 0 !important;
+}
+

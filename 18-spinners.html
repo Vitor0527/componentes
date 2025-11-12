@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18. Spinners</title>
+    <link rel="stylesheet" href="18-spinners.css">
+    <style>
+        body {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spinners</h1>
+    <div class="spinner-container">
+        <div class="spinner spinner-sm" role="status" aria-label="Loading">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner" role="status" aria-label="Loading">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner spinner-lg" role="status" aria-label="Loading">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow spinner-grow-sm" role="status" aria-label="Loading">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow" role="status" aria-label="Loading">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <div class="spinner-grow spinner-grow-lg" role="status" aria-label="Loading">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <style>
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            white-space: nowrap !important;
+            border-width: 0 !important;
+        }
+    </style>
+</body>
+</html>
+
