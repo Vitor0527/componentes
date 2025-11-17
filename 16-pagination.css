@@ -26,12 +26,12 @@
 .page-item.active .page-link {
   z-index: 3;
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
 }
 
 .page-item.disabled .page-link {
-  color: #6c757d;
+  color: var(--cor-secundaria);
   pointer-events: none;
   cursor: auto;
   background-color: #fff;
@@ -44,7 +44,7 @@
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #007bff;
+  color: var(--cor-primaria);
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;

@@ -5,7 +5,7 @@
   anchor-name: --inbox-button;
   position: relative;
   padding: 0.5rem 1rem;
-  background-color: var(--cor-primaria, #007bff);
+  background-color: var(--cor-primaria);
   color: white;
   border: none;
   border-radius: 0.25rem;
@@ -17,7 +17,7 @@
   top: anchor(--inbox-button top);
   left: anchor(--inbox-button right);
   translate: -50% -50%;
-  background-color: #dc3545;
+  background-color: var(--cor-perigo);
   color: white;
   padding: 0.25em 0.5em;
   border-radius: 50rem;

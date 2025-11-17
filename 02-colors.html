@@ -5,14 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2. Cores</title>
     <link rel="stylesheet" href="02-colors.css">
+    <style>
+        body {
+            padding: 2rem;
+            font-family: system-ui, sans-serif;
+        }
+        h1 {
+            margin-bottom: 2rem;
+        }
+        .colors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        .color-box {
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            color: white;
+            text-align: center;
+            font-weight: 500;
+        }
+        .color-box.light {
+            color: #212529;
+            border: 1px solid #dee2e6;
+        }
+        .color-primaria {
+            background-color: var(--cor-primaria);
+        }
+        .color-secundaria {
+            background-color: var(--cor-secundaria);
+        }
+        .color-sucesso {
+            background-color: var(--cor-sucesso);
+        }
+        .color-perigo {
+            background-color: var(--cor-perigo);
+        }
+        .color-aviso {
+            background-color: var(--cor-aviso);
+        }
+        .color-info {
+            background-color: var(--cor-info);
+        }
+        .color-clara {
+            background-color: var(--cor-clara);
+        }
+        .color-escura {
+            background-color: var(--cor-escura);
+        }
+        .buttons-section {
+            margin-top: 2rem;
+        }
+        .buttons-section h2 {
+            margin-bottom: 1rem;
+        }
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <h1>Cores</h1>
-    <div class="color-example">
-        <p>Este é um exemplo usando a cor primária definida em uma variável CSS.</p>
+    
+    <h2>Paleta de Cores</h2>
+    <div class="colors-grid">
+        <div class="color-box color-primaria">
+            Primária
+        </div>
+        <div class="color-box color-secundaria">
+            Secundária
+        </div>
+        <div class="color-box color-sucesso">
+            Sucesso
+        </div>
+        <div class="color-box color-perigo">
+            Perigo
+        </div>
+        <div class="color-box color-aviso">
+            Aviso
+        </div>
+        <div class="color-box color-info">
+            Info
+        </div>
+        <div class="color-box color-clara light">
+            Clara
+        </div>
+        <div class="color-box color-escura">
+            Escura
+        </div>
     </div>
-    <button class="btn-primary">Botão Primário</button>
-    <button class="btn-secondary">Botão Secundário</button>
+
+    <div class="buttons-section">
+        <h2>Exemplos em Botões</h2>
+        <div class="buttons-container">
+            <button class="btn-primary">Botão Primário</button>
+            <button class="btn-secondary">Botão Secundário</button>
+        </div>
+    </div>
 </body>
 </html>
 

@@ -18,11 +18,11 @@
 .breadcrumb-item + .breadcrumb-item::before {
   content: "/";
   padding: 0 0.5rem;
-  color: #6c757d;
+  color: var(--cor-secundaria);
 }
 
 .breadcrumb-item a {
-  color: #007bff;
+  color: var(--cor-primaria);
   text-decoration: none;
 }
 
@@ -31,10 +31,10 @@
 }
 
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: var(--cor-secundaria);
 }
 
 .breadcrumb-item.active[aria-current="page"] {
-  color: #6c757d;
+  color: var(--cor-secundaria);
 }
 

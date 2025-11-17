@@ -15,7 +15,7 @@ ul[popover] {
 #anchor {
   anchor-name: --toggle;
   padding: 0.5rem 1rem;
-  background-color: #007bff;
+  background-color: var(--cor-primaria);
   color: white;
   border: none;
   border-radius: 0.25rem;
@@ -51,6 +51,6 @@ ul[popover] {
 }
 
 #target li a:hover {
-  background-color: #f8f9fa;
+  background-color: var(--cor-clara);
 }
 

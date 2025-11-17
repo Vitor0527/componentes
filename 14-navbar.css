@@ -7,12 +7,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  background-color: #f8f9fa;
+  background-color: var(--cor-clara);
   border-bottom: 1px solid #dee2e6;
 }
 
 .navbar.bg-light {
-  background-color: #f8f9fa !important;
+  background-color: var(--cor-clara, #f8f9fa) !important;
 }
 
 .container-fluid {
@@ -39,7 +39,7 @@
 
 .navbar-brand:hover {
   text-decoration: none;
-  color: #007bff;
+  color: var(--cor-primaria);
 }
 
 .navbar-nav {
@@ -60,17 +60,17 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #007bff;
+  color: var(--cor-primaria);
   text-decoration: none;
 }
 
 .nav-link.active {
-  color: #007bff;
+  color: var(--cor-primaria);
   font-weight: 600;
 }
 
 .nav-link.disabled {
-  color: #6c757d;
+  color: var(--cor-secundaria);
   pointer-events: none;
   cursor: default;
 }

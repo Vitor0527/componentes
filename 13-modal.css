@@ -27,7 +27,7 @@ dialog[popover]::backdrop {
 
 button[popovertarget] {
   padding: 0.5rem 1rem;
-  background-color: #007bff;
+  background-color: var(--cor-primaria);
   color: white;
   border: none;
   border-radius: 0.25rem;
@@ -39,7 +39,7 @@ button[popovertarget]:hover {
 }
 
 button[popovertargetaction="hide"] {
-  background-color: #6c757d;
+  background-color: var(--cor-secundaria);
 }
 
 button[popovertargetaction="hide"]:hover {
