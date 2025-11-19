@@ -61,3 +61,8 @@
 /* 20. Tooltip */
 @import url('20-tooltip.css');
 
+/* Regra global de fontes para todo o projeto */
+body {
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+}
+

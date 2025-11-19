@@ -32,16 +32,16 @@ details[open] summary::before {
 }
 
 summary:hover {
-  background-color: #e9ecef;
+  background-color: var(--cor-clara);
 }
 
 details[open] summary {
-  background-color: #e9ecef;
-  border-bottom: 1px solid #ddd;
+  background-color: var(--cor-clara);
+  border-bottom: 1px solid var(--cor-clara);
 }
 
 details > div {
   padding: 1rem;
-  background-color: white;
+  background-color: var(--cor-clara);
 }
 

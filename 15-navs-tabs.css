@@ -35,7 +35,7 @@ summary::-webkit-details-marker {
 }
 
 summary:hover {
-  background-color: #e9ecef;
+  background-color: var(--cor-clara);
 }
 
 details[open] :is(summary) {
@@ -45,14 +45,14 @@ details[open] :is(summary) {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom: none;
-  background-color: #fff;
+  background-color: var(--cor-clara);
 }
 
 details::details-content {
   grid-column: 1 / -1;
   grid-row: 2;
   padding: 1rem;
-  background-color: #fff;
+  background-color: var(--cor-clara);
 }
 
 details:not([open])::details-content {

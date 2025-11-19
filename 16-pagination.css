@@ -34,8 +34,8 @@
   color: var(--cor-secundaria);
   pointer-events: none;
   cursor: auto;
-  background-color: #fff;
-  border-color: #dee2e6;
+  background-color: var(--cor-clara);
+  border-color: var(--cor-clara);
 }
 
 .page-link {
@@ -46,17 +46,17 @@
   line-height: 1.25;
   color: var(--cor-primaria);
   text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #dee2e6;
+  background-color: var(--cor-clara);
+  border: 1px solid var(--cor-clara);
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
 
 .page-link:hover {
   z-index: 2;
-  color: #0056b3;
+  color: var(--cor-primaria);
   text-decoration: none;
-  background-color: #e9ecef;
-  border-color: #dee2e6;
+  background-color: var(--cor-clara);
+  border-color: var(--cor-clara);
 }
 
 .page-link:focus {

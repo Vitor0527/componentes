@@ -6,13 +6,13 @@ progress {
   width: 100%;
   height: 1.5rem;
   overflow: hidden;
-  background-color: #e9ecef;
+  background-color: var(--cor-clara);
   border-radius: 0.25rem;
   appearance: none;
 }
 
 progress::-webkit-progress-bar {
-  background-color: #e9ecef;
+  background-color: var(--cor-clara);
   border-radius: 0.25rem;
 }
 
@@ -31,7 +31,7 @@ progress::-moz-progress-bar {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #212529;
+  color: var(--cor-escura);
 }
 
 progress[value] {
@@ -39,7 +39,7 @@ progress[value] {
 }
 
 progress:indeterminate {
-  background-image: linear-gradient(to right, var(--cor-primaria) 30%, #e9ecef 30%);
+  background-image: linear-gradient(to right, var(--cor-primaria) 30%, var(--cor-clara) 30%);
   background-size: 200% 100%;
   background-position: left -31% top 0;
   animation: progress-indeterminate 1.5s linear infinite;

@@ -2,14 +2,14 @@
 /* Usando variáveis CSS com var() */
 
 :root {
-  --cor-primaria: #0f7ef5;
-  --cor-secundaria: #6c757d;
-  --cor-sucesso: #28a745;
-  --cor-perigo: #dc3545;
+  --cor-primaria: #5b7cfa;
+  --cor-secundaria: #7aa2ff;
+  --cor-sucesso: #22c55e;
+  --cor-perigo: #ef4444;
   --cor-aviso: #ffc107;
   --cor-info: #17a2b8;
-  --cor-clara: #f8f9fa;
-  --cor-escura: #343a40;
+  --cor-clara: #f2f5f8;
+  --cor-escura: #0f1114;
 }
 
 .btn-primary {

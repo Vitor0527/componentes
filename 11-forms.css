@@ -5,7 +5,7 @@
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 500;
-  color: #212529;
+  color: var(--cor-escura);
 }
 
 .form-control {
@@ -15,19 +15,19 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
+  color: var(--cor-escura);
+  background-color: var(--cor-clara);
   background-image: none;
-  border: 1px solid #ced4da;
+  border: 1px solid var(--cor-clara);
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   margin-bottom: 1rem;
 }
 
 .form-control:focus {
-  color: #212529;
-  background-color: #fff;
-  border-color: #80bdff;
+  color: var(--cor-escura);
+  background-color: var(--cor-clara);
+  border-color: var(--cor-primaria);
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
@@ -44,9 +44,9 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
-  background-color: #fff;
-  border: 1px solid #ced4da;
+  color: var(--cor-escura);
+  background-color: var(--cor-clara);
+  border: 1px solid var(--cor-clara);
   border-radius: 0.25rem;
   margin-bottom: 1rem;
 }
@@ -64,7 +64,7 @@
   margin-top: 0.25em;
   margin-left: -1.5em;
   vertical-align: top;
-  background-color: #fff;
+  background-color: var(--cor-clara);
   border: 1px solid rgba(0, 0, 0, 0.25);
   appearance: none;
   cursor: pointer;

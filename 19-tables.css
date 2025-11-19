@@ -4,9 +4,9 @@
 .table {
   width: 100%;
   margin-bottom: 1rem;
-  color: #212529;
+  color: var(--cor-escura);
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: var(--cor-clara);
   border-collapse: collapse;
 }
 
@@ -31,7 +31,7 @@
 
 .table thead th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dee2e6;
+  border-bottom: 2px solid var(--cor-clara);
   font-weight: 600;
   text-align: left;
   background-color: var(--cor-clara);
@@ -39,7 +39,7 @@
 
 .table tbody td,
 .table tbody th {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--cor-clara);
 }
 
 .table tbody tr:hover {
